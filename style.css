@@ -93,7 +93,7 @@ body{
 }
 
 .section{
-   padding: calc(5rem + --header-height) 0;
+   padding: calc(5rem + var(--header-height)) 0;
 }
 .section .title{
     margin-bottom: 1rem;
