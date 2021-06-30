@@ -3,7 +3,10 @@
 <h4 align="center"> 
 	🚧  Projeto L² 🚀 Terminado  🚧
 </h4>
-
+<h1 align="center">
+    <img alt="Readme.l2" src="assets\gifs\l²1200.gif">
+    <img alt="Readme.l2" src="assets\gifs\l²360.gif">
+</h1>
 ### Tabela de Conteúdo 
 
    * [Tabela de Conteudo](#tabela-de-conteudo)
