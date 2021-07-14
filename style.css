@@ -114,28 +114,6 @@ body {
   );
 }
 
-#switch:checked ~ .dark-mode-toggle .circle{
-    margin-left: 22px;
-}
-#night-toggle{
-    position: absolute;
-    width: 2.5rem;
-    height: 1.25rem;
-    background: #092c3e;
-    right: 5.2%;
-    top: 1.6rem;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-}
-#night-toggle .circle{
-    width: 16px;
-    height: 16px;
-    background: #fff;
-    border-radius: 50%;
-    margin-left: 3px;
-    transition: all 0.35s ease;
-}
 /*____________________Layout____________________*/
 .container{
    margin-left: 1.5rem;
@@ -552,6 +530,28 @@ footer .social a:hover{
     nav .icon-menu{
         display: none;
     }
+    #switch:checked ~ .dark-mode-toggle .circle{
+        margin-left: 22px;
+    }
+    #night-toggle{
+        position: absolute;
+        width: 2.5rem;
+        height: 1.25rem;
+        background: #092c3e;
+        right: 5.2%;
+        top: 3rem;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+    }
+    #night-toggle .circle{
+        width: 16px;
+        height: 16px;
+        background: #fff;
+        border-radius: 50%;
+        margin-left: 3px;
+        transition: all 0.35s ease;
+    }
     /*____________________Layout____________________*/
     main{
         margin-top: var(--header-height);
@@ -643,6 +643,10 @@ footer .social a:hover{
     }
     nav .icon-menu{
         display: none;
+    }
+    #night-toggle{
+        right: 5.2%;
+        top: 1.6rem;
     }
     /*____________________Layout____________________*/
     main{
@@ -736,6 +740,10 @@ footer .social a:hover{
     }
     nav .icon-menu{
         display: none;
+    }
+    #night-toggle{
+        right: 2.2%;
+        top: 1.8rem;
     }
     /*__________Layout__________*/
     main{
@@ -834,6 +842,10 @@ footer .social a:hover{
     }
     nav .icon-menu{
         display: none;
+    }
+    #night-toggle{
+        right: 3.2%;
+        top: 1.8rem;   
     }
     /*__________Layout__________*/
     main{

@@ -8,6 +8,7 @@ for(const element of toggle){
     element.addEventListener('click', function() {
         nav.classList.toggle('show');
     })
+    
 }
 
 /*Quando clicar em um item no menu, esconder o menu */
