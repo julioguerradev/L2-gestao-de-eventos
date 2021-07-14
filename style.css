@@ -34,12 +34,34 @@ background:rgb(77, 178, 255) ;
     --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%);
 
+    
+
     /* fonts */
     --title-font-size: 1.875rem;
     --subtitle-font-size: 1rem;
     --title-font: 'Poppins', sans-serif;
     --body-font: 'DM Sans', sans-serif;
 }
+[data-theme="dark"] {
+    --hue: 210;
+    /* HSL color mode */
+    --base-color: hsl(var(--hue) 226% 87%);
+    --base-color-second: hsl(var(--hue)225% 58%);
+    --base-color-alt: hsl(var(--hue)57% 53%);
+    --title-color: hsl(var(--hue) 71% 50%);
+    --text-color: hsl(0 0% 46%);
+    --text-color-light: hsl(40% 30% 98%);
+    --body-color: hsl(0 0% 10%);
+}
+/* #switch:checked ~ :root{
+    --base-color: hsl(var(--hue) 226% 57%);
+    --base-color-second: hsl(var(--hue)65% 10%);
+    --base-color-alt: hsl(var(--hue)57% 3%);
+    --title-color: hsl(var(--hue) 41% 0%);
+    --text-color: hsl(0 0% 10%);
+    --text-color-light: hsl(0 0% 10%);
+    --body-color: hsl(0 0% 10%);
+} */
 /*____________________Base____________________*/
 html {
   scroll-behavior: smooth;
@@ -90,6 +112,29 @@ body {
     hsla(var(--hue), 65%, 88%, 0.34),
     hsla(var(--hue), 36%, 57%, 1)
   );
+}
+
+#switch:checked ~ .dark-mode-toggle .circle{
+    margin-left: 22px;
+}
+#night-toggle{
+    position: absolute;
+    width: 2.5rem;
+    height: 1.25rem;
+    background: #092c3e;
+    right: 5.2%;
+    top: 1.6rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+#night-toggle .circle{
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    margin-left: 3px;
+    transition: all 0.35s ease;
 }
 /*____________________Layout____________________*/
 .container{
@@ -145,7 +190,7 @@ body {
     color: var(--base-color);
 }
 .logo-alt span{
-    color: white;
+    color: var(--body-color);
 }
 /*____________________Navigation____________________*/
 nav{
@@ -280,7 +325,7 @@ nav.show .icon-close{
   
 /*____________________About____________________*/
 #about{
-    background: white;
+    background: var(--body-color);
 }
 #about .container{
     margin: 0;
@@ -338,7 +383,7 @@ nav.show .icon-close{
 }
 /*____________________Testimonials____________________*/
 #testimonials{
-    background: white;
+    background: var(--body-color);
 }
 #testimonials .container{
     margin-left: 0;
@@ -850,6 +895,11 @@ footer .social a:hover{
     }
     
 }
+
+
+
+
+
 
 
 
