@@ -53,15 +53,7 @@ background:rgb(77, 178, 255) ;
     --text-color-light: hsl(40% 30% 98%);
     --body-color: hsl(0 0% 10%);
 }
-/* #switch:checked ~ :root{
-    --base-color: hsl(var(--hue) 226% 57%);
-    --base-color-second: hsl(var(--hue)65% 10%);
-    --base-color-alt: hsl(var(--hue)57% 3%);
-    --title-color: hsl(var(--hue) 41% 0%);
-    --text-color: hsl(0 0% 10%);
-    --text-color-light: hsl(0 0% 10%);
-    --body-color: hsl(0 0% 10%);
-} */
+
 /*____________________Base____________________*/
 html {
   scroll-behavior: smooth;
@@ -230,8 +222,30 @@ nav.show .menu{
 nav.show .menu ul {
     display: grid;
 }
- nav.show ul.grid{
+nav.show ul.grid{
     gap: 4rem;
+}
+#switch:checked ~ .dark-mode-toggle .circle{
+    margin-left: 22px;
+}
+nav.show #night-toggle{
+    position: absolute;
+    width: 2.5rem;
+    height: 1.25rem;
+    background: #092c3e;
+    right: 5.2%;
+    top: 3rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+nav.show #night-toggle .circle{
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    margin-left: 3px;
+    transition: all 0.35s ease;
 }
 /*____________________Toggle Menu____________________*/
 .toggle{
